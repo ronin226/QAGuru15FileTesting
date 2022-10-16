@@ -1,24 +1,20 @@
+import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 import static com.codeborne.xlstest.XLS.containsText;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.MatcherAssert.assertThat;
 import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
-import org.hamcrest.core.IsEqual;
 import org.junit.jupiter.api.Test;
 import com.codeborne.pdftest.PDF;
-import static com.codeborne.pdftest.PDF.*;
 import com.codeborne.xlstest.XLS;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.opencsv.CSVReader;
 import model.Cat;
-import static org.assertj.core.api.Assertions.assertThat;
-import com.codeborne.pdftest.PDF;
-import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 
 public class FileTesting {
     @Test
